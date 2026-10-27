@@ -1,0 +1,109 @@
+
+/* Tablet dan layar menengah */
+@media (max-width: 849px) {
+  .notes-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  main {
+    width: 92%;
+    padding-top: 26px;
+  }
+
+  .note-item,
+  .detail-note-card {
+    padding: 16px;
+  }
+}
+
+/* HP */
+@media (max-width: 599px) {
+  header {
+    gap: 10px;
+    padding: 14px 0;
+  }
+
+  header h1 {
+    font-size: 21px;
+  }
+
+  header > a {
+    font-size: 14px;
+  }
+
+  main {
+    width: 92%;
+    padding: 22px 0 90px;
+  }
+
+  .account-header {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 4%;
+  }
+
+  .account-header span {
+    width: 100%;
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .notes-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .note-item__title {
+    font-size: 17px;
+  }
+
+  .homepage__action {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .homepage__action .action-button,
+  .action button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .login-page,
+  .register-page {
+    margin: 18px auto;
+    padding: 22px;
+  }
+
+  .new-note-form {
+    padding: 18px;
+  }
+
+  .new-note-form button {
+    width: 100%;
+  }
+
+  .detail-page__title {
+    font-size: 28px;
+  }
+}
+
+/* Satu kolom tambahan pada layar sangat kecil */
+@media (max-width: 360px) {
+  .account-header {
+    gap: 8px;
+  }
+
+  .toggle-theme,
+  .toggle-locale {
+    width: 36px;
+    height: 36px;
+  }
+
+  .note-item,
+  .detail-note-card {
+    padding: 14px;
+  }
+}

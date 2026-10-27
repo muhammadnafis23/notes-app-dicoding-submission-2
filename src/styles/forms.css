@@ -1,0 +1,251 @@
+
+/* Halaman autentikasi */
+.login-page,
+.register-page {
+  width: 100%;
+  max-width: 440px;
+  margin: 32px auto;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.login-page h2,
+.register-page h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.login-page p,
+.register-page p {
+  margin-bottom: 20px;
+  color: var(--on-background-grey);
+}
+
+/* Form umum */
+.login-input,
+.register-input,
+.new-note-form input,
+.new-note-form textarea,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--on-background);
+}
+
+.login-input::placeholder,
+.register-input::placeholder,
+.new-note-form input::placeholder,
+.new-note-form textarea::placeholder,
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--on-background-grey);
+}
+
+.input-login,
+.input-register {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group textarea,
+.new-note-form textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* Tombol form */
+.login-button,
+.register-button,
+.new-note-form button,
+.button-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.login-button:hover,
+.register-button:hover,
+.new-note-form button:hover,
+.button-submit:hover {
+  filter: brightness(1.08);
+}
+
+.login-button:disabled,
+.register-button:disabled,
+.new-note-form button:disabled,
+.button-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Link antar halaman autentikasi */
+.login-page a,
+.register-page a {
+  font-weight: 600;
+}
+
+.login-page .auth-footer,
+.register-page .auth-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Halaman tambah catatan */
+.new-note-page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.new-note-page h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.new-note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.new-note-form input,
+.new-note-form textarea {
+  border-color: var(--border);
+}
+
+.new-note-form button {
+  align-self: flex-start;
+  width: auto;
+  min-width: 150px;
+}
+
+.new-note-form .char-counter {
+  color: var(--on-background-grey);
+  font-size: 12px;
+  text-align: right;
+}
+
+/* Tombol login dan register dengan gaya sekunder */
+.new-note-form .save-button {
+  width: auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--on-background);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.new-note-form .save-button:hover {
+  background: var(--surface-hover);
+  filter: none;
+}
+
+.new-note-form .save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Tata letak tombol pada form catatan baru */
+.new-note-form .form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Tombol Batal: gaya merah seperti Hapus */
+.new-note-form .cancel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 110px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid var(--error);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--error);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.new-note-form .cancel-button:hover {
+  background: var(--error);
+  color: #fff;
+}
+
+/* Tombol Simpan: gaya sekunder seperti Arsipkan */
+.new-note-form .save-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 110px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--on-background);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.new-note-form .save-button:hover {
+  background: var(--surface-hover);
+  filter: none;
+}
+
+.new-note-description {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
